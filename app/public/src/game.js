@@ -167,12 +167,8 @@
 				history.pushState({}, null, `/${search}#game`);
 				// Redirect
 				location.hash = "reward";
-				// Reset the game
-				reset();
 				return;
 			} else {
-				// Otherwise, reset
-				reset();
 				// Go to lose
 				window.location.hash = "lose";
 			}
