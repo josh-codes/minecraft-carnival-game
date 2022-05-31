@@ -28,8 +28,8 @@
 	}
 	// Game vars
 	const game = {
-		item: undefined,
-		mob: undefined
+		item: randomItem(),
+		mob: randomItem()
 	};
 	// Register
 	window.registerHash("game", "Game", "game__main", reset);
