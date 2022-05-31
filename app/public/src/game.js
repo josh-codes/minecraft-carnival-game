@@ -26,13 +26,6 @@
 		mobImg.setAttribute("alt", "");
 		mobStop.disabled = false;
 	}
-	// Game vars
-	const game = {
-		item: randomItem(),
-		mob: randomItem()
-	};
-	// Register
-	window.registerHash("game", "Game", "game__main", reset);
 	// Lookup
 	const lookup = {
 		0: {
@@ -100,7 +93,13 @@
 		// Return the probability at the random index
 		return lookup[probability[random === probability.length ? probability.length - 1 : random]] || lookup[0];
 	};
-	window.ri = randomItem;
+	// Game vars
+	const game = {
+		item: randomItem(),
+		mob: randomItem()
+	};
+	// Register
+	window.registerHash("game", "Game", "game__main", reset);
 	// The game loop
 	setInterval(() => {
 		// If the game item is undefined, randomize it
