@@ -1,0 +1,80 @@
+/* The button */
+.global--button {
+	max-width: 36rem;
+	width: 100%;
+	padding-top: 0.4rem;
+	height: 3.2rem;
+	font-family: 'Minecraftia';
+	font-size: 1.2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 0rem;
+	border: solid #000 3px;
+	color: #fff;
+	box-shadow: inset -1px -2px 0px 2px #0008;
+	text-shadow: 2px 2px black;
+	background-color: #2238;
+	background-image: url(/assets/global/buttonbg.png);
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.global--button:disabled {
+	outline: none !important;
+	background-image: url(/assets/global/buttonbg.png) !important;
+	box-shadow: inset 0 0 100rem 100rem #0003 !important;
+	color: #AAA !important;
+	cursor: not-allowed !important;
+}
+
+/* Hovered button */
+.global--button:hover {
+	outline: none;
+	background-image: url(/assets/global/buttonbg_tint.png);
+	color: #ffffaa;
+}
+
+/* Focused button */
+.global--button:focus {
+	outline: solid #ee4488;
+}
+
+/* Clicked button */
+.global--button:active {
+	box-shadow: inset 1px 2px 0px 2px #0008;
+	padding-top: 0.5rem;
+}
+
+/* Normal bg */
+.global--bg {
+	background-image: url(/assets/global/bg.jpg);
+	background-size: cover;
+}
+
+/* Dim bg */
+.global--dimbg {
+	background-image: url(/assets/global/bgdim.jpg);
+	background-size: cover;
+}
+
+/* Text Shadow */
+.global--text-shadow {
+	font-family: 'Minecraftia';
+	text-shadow: 2px 2px black;
+}
+
+/* Text Shadow (Huge) */
+.global--text-shadow-huge {
+	font-family: 'Minecraftia';
+	text-shadow: 4px 4px black;
+}
+
+/* Link */
+.global--link {
+	color: yellow;
+	font-family: 'Minecraftia';
+	text-shadow: 2px 2px black;
+	text-decoration: none;
+}

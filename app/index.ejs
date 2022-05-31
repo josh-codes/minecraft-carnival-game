@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Main styles -->
+	<link rel="stylesheet" href="/css/main.css">
+	<title id="global__title">Carnival Game</title>
+</head>
+	<body>
+		<div class="main">
+			<!-- 404 -->
+			<%- include('views/err404.ejs', { data }) %>
+			<!-- TITLE -->
+			<%- include('views/title.ejs', { data }) %>
+			<!-- PAYMENT -->
+			<%- include('views/payment.ejs', { data }) %>
+			<!-- REWARD -->
+			<%- include('views/reward.ejs', { data }) %>
+			<!-- LOSE -->
+			<%- include('views/lose.ejs', { data }) %>
+			<!-- GAME -->
+			<%- include('views/game.ejs', { data }) %>
+		</div>
+		<script>
+// Wrap in {} so that it's not global
+{
+// Function to change the hash to home if hash is empty
+const changeHashToHome = () => {
+	// If there is no hash in the url
+	if (window.location.hash === "" || window.location.hash === "#") {
+		// Set the hash to #title
+		window.location.hash = "#title";
+	}
+}
+// Call the function
+changeHashToHome();
+// Add an event listener to the window
+window.addEventListener("hashchange", changeHashToHome);
+}
+		</script>
+	</body>
+</html>

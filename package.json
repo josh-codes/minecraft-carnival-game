@@ -1,0 +1,16 @@
+{
+	"name": "minecraft_carnival_game",
+	"version": "1.0.0",
+	"description": "A minecraft themed carnival game I made for school.",
+	"main": "dist/index.js",
+	"author": "josh-codes",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"start": "node dist/index.js"
+	},
+	"dependencies": {
+		"ejs": "^3.1.8",
+		"express": "^4.18.1"
+	}
+}

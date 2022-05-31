@@ -1,0 +1,16 @@
+<div class="global--dimbg payment--main" id="payment__main">
+	<div class="payment--container">
+		<div class="payment--money-icon">
+			<img class="payment--money-image" src="/assets/global/currency.png" alt="<?php echo $strings['currency']; ?>(s)">
+			<div class="payment--money-text-container" aria-hidden="true">
+				<span class="payment--money-text">-1</span>
+			</div>
+		</div>
+		<div class="payment--text-container">
+			<h1>Payment</h1>
+			<p>Please pay 1 <%= data.currency %>.</p>
+			<button class="global--button" id="payment__next">Next</button>
+		</div>
+	</div>
+</div>
+<script src="/src/payment.js"></script>

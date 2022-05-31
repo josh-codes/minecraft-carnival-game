@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404 | Not found</title>
+</head>
+	<body>
+		<div class="global--dimbg err404--main">
+			<div class="err404--container">
+				<img src="/assets/err404/creeper.png" alt="minecraft creaeper" />
+				<div class="err404--text-container">
+					<h1>Ssssssorry!</h1>
+					<p>The page you are looking for does not exist.</p>
+					<button onclick="location.pathname = '/'" class="global--button" href="/">Return home</button>
+				</div>
+			</div>
+		</div>
+		<style>
+@font-face {
+	font-family: 'Minecraftia';
+	src: url(/assets/Minecraftia.ttf);
+}
+html, body, .main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: 'Minecraftia';
+}
+/* The button */
+.global--button {
+	max-width: 36rem;
+	width: 100%;
+	padding-top: 0.4rem;
+	height: 3.2rem;
+	font-family: 'Minecraftia';
+	font-size: 1.2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 0rem;
+	border: solid #000 3px;
+	color: #fff;
+	box-shadow: inset -1px -2px 0px 2px #0008;
+	text-shadow: 2px 2px black;
+	background-color: #2238;
+	background-image: url(/assets/global/buttonbg.png);
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.global--button:disabled {
+	outline: none !important;
+	background-image: url(/assets/global/buttonbg.png) !important;
+	box-shadow: inset 0 0 100rem 100rem #0003 !important;
+	color: #AAA !important;
+	cursor: not-allowed !important;
+}
+/* Hovered button */
+.global--button:hover {
+	outline: none;
+	background-image: url(/assets/global/buttonbg_tint.png);
+	color: #ffffaa;
+}
+/* Focused button */
+.global--button:focus {
+	outline: solid #ee4488;
+}
+/* Clicked button */
+.global--button:active {
+	box-shadow: inset 1px 2px 0px 2px #0008;
+	padding-top: 0.5rem;
+}
+/* Dim bg */
+.global--dimbg {
+	background-image: url(/assets/global/bgdim.jpg);
+	background-size: cover;
+}
+/* The main element */
+.err404--main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: grid;
+	place-items: center;
+}
+
+/* The main container */
+.err404--container {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+/* If the screen is less than 60rem */
+@media screen and (max-width: 60rem) {
+	.err404--container {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	/* The text */
+	.err404--text-container > * {
+		text-align: center;
+		width: 20rem;
+	}
+}
+/* If the screen is greater than 60rem */
+@media screen and (min-width: 60rem) {
+	.err404--container {
+		gap: 1rem;
+	}
+	/* The text */
+	.err404--text-container > * {
+		width: 30rem;
+	}
+}
+		</style>
+	</body>
+</html>

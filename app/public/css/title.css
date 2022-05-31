@@ -1,0 +1,72 @@
+/* The background */
+.title--main {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/* The container */
+.title--minecraft-title-container {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	display: grid;
+	place-items: center;
+}
+/* The title itself */
+.title--minecraft-title {
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+/* The subtitle container */
+.title--minecraft-title-subtitle-container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: end;
+}
+/* The subtitle */
+.title--minecraft-title-subtitle {
+	transform: rotate(-20deg) translate(50%, 50%);
+	font-size: 100%;
+	text-align: center;
+	color: yellow;
+	font-family: 'Minecraftia';
+	text-shadow: 2px 2px black;
+	animation: title--minecraft-title-subtitle-animation 0.5s ease-in-out infinite;
+}
+
+/* The subtitle animation */
+@keyframes title--minecraft-title-subtitle-animation {
+	0% {
+		transform: rotate(-20deg) translate(50%, 50%) scale(0.9);
+	}
+	50% {
+		transform: rotate(-20deg) translate(50%, 50%);
+	}
+	100% {
+		transform: rotate(-20deg) translate(50%, 50%) scale(0.9);
+	}
+}
+
+/* The container around the buttons container */
+.title--button-wrappers {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+/* The button container */
+.title--button-select {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 2rem;
+	width: 100%;
+}

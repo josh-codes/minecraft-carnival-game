@@ -1,0 +1,6 @@
+.reward--money-text {
+	font-size: 2rem;
+	color: #2D2;
+	text-shadow: 2px 2px black;
+	animation: payment--money-text-animation 0.5s ease-in-out infinite;
+}
