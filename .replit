@@ -1,2 +1,2 @@
 run = "npm install && npm run start"
-language = "nodejs"
+language = "nix"
