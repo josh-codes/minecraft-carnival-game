@@ -1,2 +1,2 @@
-run = "npm install && npm run start"
+run = "yarn install && yarn run start"
 language = "nix"
